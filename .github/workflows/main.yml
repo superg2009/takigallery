@@ -1,16 +1,8 @@
-# This is a basic workflow to help you get started with Actions
-
-name: Production Build
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
-on:
-  push:
-    branches: [ master ]
+name: Production Buildon:
   pull_request:
-    branches: [ master ]
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+  push:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,8 +18,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: NPM Install
-        run:|
-          npm install
+      run: |
+        npm install
     - name: Production Build
       run: |
         npm build
