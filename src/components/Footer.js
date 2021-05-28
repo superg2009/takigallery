@@ -3,8 +3,8 @@ import Emoji from './Emoji';
 function Footer (props){
     return(
         <div> 
-         &copy; 2020 Grant Marshall <br></br>
-        <a href='https://www.grantmarshall.me'>Website</a>
+         &copy; {new Date().getFullYear()} Grant Marshall <br></br>
+        <a href='https://www.github.com/superg2009'>Github</a>
         <p> for the glory of Hands <Emoji label='Hand' symbol="👋" aria-hidden = {true}></Emoji></p>
         <p>Made with React, React Bootstrap, Memes and <Emoji label='Heart' symbol='❤️' aria-hidden = {true}></Emoji></p>
         </div>

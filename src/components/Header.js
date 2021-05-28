@@ -8,7 +8,7 @@ function Header(props){
         <Jumbotron fluid>
             <Container variant='light' bg='light'>
                 <h1> The Glorious Greek Panagiotis </h1>
-                <p>Your goto for all your Greek needs</p>
+                <h2>Your goto for all your Greek needs</h2>
             </Container>
         </Jumbotron>
     );
